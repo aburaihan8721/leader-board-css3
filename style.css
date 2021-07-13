@@ -1,0 +1,237 @@
+
+/* ==========================
+         common css
+=============================*/
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(100, 100%, 97%);
+}
+.container{
+    max-width: 960px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+a:link{
+    text-decoration: none;
+}
+
+/* ==========================
+      css for header
+=============================*/
+
+.header_area{
+    background-color: #562EFF;
+    width: 100%;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.logo_img img{
+    width: 40px;
+    height: 50px;
+}
+
+.logo_area .logo_text{
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu_area{
+    display: flex;
+    align-items: center;
+}
+
+.main_menu{
+    margin-right: 30px;
+}
+
+.main_menu a{
+    /* background: #6ab13b; */
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+
+.main_menu a:hover{
+    color: #7e0c0c;
+}
+
+.menu_area .user_img img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ==========================
+         css for main area
+=============================*/
+
+.main_area{
+    width: 100%;
+}
+.inner_main{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px black ;
+}
+
+.inner_main hr{
+    margin: 0 20px;
+}
+
+/* top players */
+.players_title, .blogs_title{
+    font-size: 24px;
+    color: #562EFF;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.players_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px 20px;
+    /* background: rgb(39, 1, 1); */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.single_player{
+    display: flex;
+    align-items: center;
+}
+
+.player_img{
+    margin-right: 20px;
+}
+
+.player_img img{
+    width: 56px;
+    height: 56px;
+}
+
+.player_name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* top blogs */
+.top_blogs{
+    margin-top: 30px;
+}
+
+.blogs_title{
+    margin-bottom: 30px;
+}
+
+.blogs_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+}
+
+.single_blog{
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.single_blog_img img{
+    max-width: 177px;
+    margin-right: 40px;
+}
+
+.single_blog_content h4{
+    font-size: 20px;
+}
+
+.single_blog_content p{
+    color: rgba(238, 26, 26, 0.979);
+}
+
+
+/* ==========================
+        css for footer area
+=============================*/
+
+.footer_area{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.inner_footer h2{
+    font-size: 24px;
+    color: #562EFF;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.courses_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0px 0px 1px black ;
+    padding: 30px 0px;
+    margin-bottom: 8px;
+}
+
+.single_course{
+    margin-right: 40px;
+}
+
+.single_course:last-child{
+    margin-right: 0px;
+}
+
+.course_img img{
+    max-width: 224px;
+}
+.course_title{
+    margin-top: 20px;
+}
+
+.rating_wrapper{
+    display: flex;
+}
+
+.rating .star{
+    color: rgb(243, 243, 88);
+}
+
+.timer{
+    margin-left: 10px;
+}
+
+/* end */
